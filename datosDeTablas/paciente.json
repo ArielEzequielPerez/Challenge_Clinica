@@ -1,0 +1,33 @@
+[
+    {
+        "historial": 1231232,
+        "nombre":"ariel",
+        "consutas":[
+            {
+                "dolencia":"dolor en la rodilla",
+                "suceso":"golpe juagando al futbol"
+            }
+        ]
+
+    },
+    {
+        "historial": 1231232,
+        "nombre":"migue",
+        "consutas":[
+            {
+                "dolencia":"dolor en la cabeza",
+                "suceso":""
+            }
+        ]
+    },
+    {
+        "historial": 1231232,
+        "nombre":"norby",
+        "consutas":[
+            {
+                "dolencia":"dolor fuerte en el pecho",
+                "suceso":"mientras dormia sintio que no podia respirar"
+            }
+        ]
+    }
+]
