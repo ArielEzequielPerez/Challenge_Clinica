@@ -1,4 +1,5 @@
 <template>
+<h1>Pacientes</h1>
   <div class="container">
     <table class="table">
       <thead class="table-dark">
@@ -6,7 +7,7 @@
           <th>Nombre</th>
           <th>Apellido</th>
           <th>Consulta</th>
-          <th></th>
+          <th>Atendido</th>
         </tr>
       </thead>
       <tbody>
@@ -16,13 +17,19 @@
           <td>
             <tr class="table" v-for="consulta in paciente.consutas">
               <td>
-               <div>
-                  <p>Dolencia: <em>{{ consulta.dolencia }}</em> </p> 
-                  <p>Suceso: <em>{{ consulta.suceso }}</em> </p>
-               </div>
-               </td>
-              
+                <div>
+                  <p>
+                    Dolencia: <em>{{ consulta.dolencia }}</em>
+                  </p>
+                  <p>
+                    Suceso: <em>{{ consulta.suceso }}</em>
+                  </p>
+                </div>
+              </td>
             </tr>
+          </td>
+          <td>
+            <input type="checkbox">
           </td>
         </tr>
       </tbody>
@@ -39,5 +46,14 @@ import { onMounted, ref, reactive } from "vue";
 .tr {
   display: flex;
   justify-content: center;
+}
+.check {
+width:30px;
+height:30px;
+}
+.input{
+   display: flex;
+   align-items: center;
+   justify-content:;
 }
 </style>
