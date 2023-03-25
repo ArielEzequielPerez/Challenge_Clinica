@@ -7,7 +7,8 @@
                 "dolencia":"dolor en la rodilla",
                 "suceso":"golpe juagando al futbol"
             }
-        ]
+        ],
+        "profesional" : "dr Balsan"
 
     },
     {
@@ -18,7 +19,9 @@
                 "dolencia":"dolor en la cabeza",
                 "suceso":""
             }
-        ]
+        ],
+        "profesional" : "dr Perez"
+
     },
     {
         "historial": 1231232,
@@ -28,6 +31,7 @@
                 "dolencia":"dolor fuerte en el pecho",
                 "suceso":"mientras dormia sintio que no podia respirar"
             }
-        ]
+        ],
+        "profesional" : "dr Mercado"
     }
 ]

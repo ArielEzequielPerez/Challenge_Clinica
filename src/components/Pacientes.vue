@@ -1,13 +1,13 @@
 <template>
-<h1>Pacientes</h1>
+  <h1>Pacientes</h1>
   <div class="container">
     <table class="table">
       <thead class="table-dark">
         <tr>
+          <th>Historial</th>
           <th>Nombre</th>
-          <th>Apellido</th>
           <th>Consulta</th>
-          <th>Atendido</th>
+          <th>Profesional</th>
         </tr>
       </thead>
       <tbody>
@@ -28,9 +28,7 @@
               </td>
             </tr>
           </td>
-          <td>
-            <input type="checkbox">
-          </td>
+          <td>{{ paciente.profesional }}</td>
         </tr>
       </tbody>
     </table>
@@ -48,12 +46,12 @@ import { onMounted, ref, reactive } from "vue";
   justify-content: center;
 }
 .check {
-width:30px;
-height:30px;
+  width: 30px;
+  height: 30px;
 }
-.input{
-   display: flex;
-   align-items: center;
-   justify-content:;
+
+input[type="checkbox"] {
+  cursor: pointer;
+  transform: scale(2);
 }
 </style>

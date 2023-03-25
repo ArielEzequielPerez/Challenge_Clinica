@@ -1,0 +1,12 @@
+[
+    {
+        "legajo": 1123,
+        "nombre": "dr. Perez",
+        "especialidad": "Traumatologia"
+    },
+    {
+        "legajo": 1124,
+        "nombre": "dr. Mercado",
+        "especialidad": "Clinico"
+    }
+]
