@@ -12,11 +12,30 @@ De todas las consultas se sabe la fecha de realizacion, el profesional que la re
  * Llevar a cabo en VB.NET con asp.net como front-end
  * Generar una herencia persona - médico - paciente 
 
+## Levantar el proyecto
+- Se necesita usar [docker](https://www.swhosting.com/es/comunidad/manual/como-instalar-docker-en-tu-propio-servidor)
+- Una vez instalado solo se ejecuta en la terminal, ubicada en la direccion del proyecto, el siguiente comando:
+```bash
+docker compose build
+```
+una vez hayas construido el contenedor sigue levantar el proyecto:
+```bash
+docker compose up -d
+```
+
+# Proyecto
+## Frontend
+- Utilice el framework de front vue 3
+## Backend
+- .Net 6
+- c#
+## Base de datos
+- SqlServer
+
 ## Ide
  - [Visual studio community 2019](https://my.visualstudio.com/Downloads?q=visual%20studio%202019&wt.mc_id=o~msft~vscom~older-downloads)
  - [SQL Server Management Studio](https://docs.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver15)
-## .Net 5
-- [.Net](https://dotnet.microsoft.com/en-us/download/dotnet/5.0)
+
 ## Nugets a utilizar para .Net
 - EntityFrameworkCore
 - EntityFrameworkCore.Tools
@@ -30,4 +49,4 @@ De todas las consultas se sabe la fecha de realizacion, el profesional que la re
 
 
 
-## Autor
+## Autor [Ariel Perez](https://github.com/ArielEzequielPerez)
