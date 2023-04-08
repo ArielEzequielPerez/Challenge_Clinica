@@ -1,37 +1,57 @@
 [
-    {
-        "historial": 1231232,
-        "nombre":"ariel",
-        "consutas":[
-            {
-                "dolencia":"dolor en la rodilla",
-                "suceso":"golpe juagando al futbol"
-            }
-        ],
-        "profesional" : "dr Balsan"
-
-    },
-    {
-        "historial": 1231232,
-        "nombre":"migue",
-        "consutas":[
-            {
-                "dolencia":"dolor en la cabeza",
-                "suceso":""
-            }
-        ],
-        "profesional" : "dr Perez"
-
-    },
-    {
-        "historial": 1231232,
-        "nombre":"norby",
-        "consutas":[
-            {
-                "dolencia":"dolor fuerte en el pecho",
-                "suceso":"mientras dormia sintio que no podia respirar"
-            }
-        ],
-        "profesional" : "dr Mercado"
-    }
+  {
+    "id": 1,
+    "historial": 1231232,
+    "nombre": "ariel",
+    "consutas": [
+      {
+        "accion": "Consulta",
+        "fecha": "21/02/2023",
+        "profesional": "dr. Balsan",
+        "costoConsulta": "2500",
+        "descripcion": "golpe juagando al futbol",
+        "costoMaterialDescartable": "1400"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "historial": 1231232,
+    "nombre": "migue",
+    "consutas": [
+      {
+        "id": 1,
+        "accion": "resonancia",
+        "fecha": "21/02/2023",
+        "profesional": "dr. Balsan",
+        "costoConsulta": "2500",
+        "descripcion": "Dolor de rodilla",
+        "costoMaterialDescartable": "1000"
+      },
+      {
+        "accion": "Consulta",
+        "fecha": "21/02/2023",
+        "profesional": "dr. Mercado",
+        "costoConsulta": "2500",
+        "descripcion": "golpe juagando al futbol",
+        "costoMaterialDescartable": "1400"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "historial": 1231232,
+    "nombre": "norby",
+    "consutas": [
+      {
+        "id": 2,
+        "accion": "Consulta",
+        "fecha": "21/02/2023",
+        "profesional": "dr. Mercado",
+        "costoConsulta": "2500",
+        "descripcion": "Dolor cabeza",
+        "costoMaterialDescartable": "1400"
+      }
+    ]
+  }
 ]

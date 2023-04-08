@@ -9,7 +9,7 @@ Las consultas pueden ser en consultorio o la realizacion de una practica medica.
 De todas las consultas se sabe la fecha de realizacion, el profesional que la realiza, el costo, y la descripcion y el costo del material descartable en las pracicas medicas.
 
  * Plantear diseño UML y de Base de Datos 
- * Llevar a cabo en VB.NET con asp.net como front-end
+ * Llevar a cabo algun framework de frontend(Puede ser react, angular o vue)
  * Generar una herencia persona - médico - paciente 
 
 ## Levantar el proyecto
