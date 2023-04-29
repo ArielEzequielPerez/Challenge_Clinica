@@ -1,17 +1,13 @@
-
+version: "3"
 services:
-  vue:
+  vue-app:
+    container_name: clinica-vue
     build:
       context: .
     volumes:
       - .:/usr/src/app
-      - node_modules:/usr/src/app/node_modules
+      - /usr/src/app/node_modules
+    environment:
+      - NODE_ENV=production
     ports:
-      - 8050:5173
-
-volumes:
-  node_modules:
-
-networks:
-  aaip-dev:
-    external: true
+      - 6000:6000

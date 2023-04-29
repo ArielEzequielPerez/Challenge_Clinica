@@ -14,26 +14,30 @@
           <td>{{ paciente.historial }}</td>
           <td>{{ paciente.nombre }}</td>
           <td>
-            <button
-              type="button"
-              class="btn btn-info"
-              v-on:click="verConsultas(paciente.id)"
-            >
-              Consultas
-            </button>
+            <div>
+              <button
+                type="button"
+                class="btn btn-info"
+                v-on:click="verPopup()"
+              ></button>
+              
+              <table v-if="mostrarDetalles">
+                <thead>
+                  <tr>
+                    <th>Accion</th>
+                    <th>Fecha</th>
+                  </tr>
+                </thead>
+                <tbody v-for="consulta in paciente.consutas">
+                  <tr>
+                    <td>{{ consulta.accion }}</td>
+                    <td>{{ consulta.fecha }}</td>
+                  </tr>
+                  <tr></tr>
+                </tbody>
+              </table>
+            </div>
             <div v-if="mostrarDetalles">
-              <!-- Componente modal -->
-              <teleport to="body">
-                <div class="modal">
-                  <div class="modal-content">
-                    <!-- Contenido del modal -->
-                    <h2>Detalles</h2>
-                    <p>Información adicional sobre el elemento.</p>
-                    <button v-on:click="ocultarPopup">Cerrar</button>
-                  </div>
-                </div>
-              </teleport>
-              <!-- Fondo oscuro detrás del modal -->
               <div class="modal-overlay" v-on:click="ocultarPopup"></div>
             </div>
             <!-- <button v-on:click="mostrarPopup(paciente.consutas)">Ver Consultas</button> -->
@@ -57,25 +61,16 @@
 </template>
 <script setup lang="ts">
 import pacientes from "../../datosDeTablas/paciente.json";
+import Consultas from "../components/Consultas.vue";
 import { onMounted, ref, reactive } from "vue";
 
-const mostrarDetalles = ref(false);
+const mostrarDetalles = ref();
 
-function verConsultas(id: number) {
-  const pacienteEncontrado = pacientes.find((paciente) => paciente.id === id);
-  if (pacienteEncontrado == null) {
-    alert("Paciente no encontrado");
-  }
-  if (pacienteEncontrado?.consutas.length === 0) {
-    alert("El paciente no tiene consultas");
-  }
-  mostrarDetalles.value = true;
-  console.log({ paciente: pacienteEncontrado });
-
-  return pacienteEncontrado?.consutas;
-}
 function ocultarPopup() {
   mostrarDetalles.value = false;
+}
+function verPopup() {
+  mostrarDetalles.value = true;
 }
 </script>
 <style>
